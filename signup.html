@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="login-container">
+        <h1>Register</h1>
+        <br /><br />
+        <form>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="first-name">First Name:</label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="form-group col">
+              <label for="last-name">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender:</label><br />
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+              />
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+              />
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="other"
+                value="other"
+              />
+              <label class="form-check-label" for="other">Other</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirm-password" />
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+          <hr />
+
+          <p>Or sign up using your social media account:</p>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <a href="#" class="btn btn-primary btn-block">
+                <div class="form-row">
+                  <div class="form-group col">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                  </div>
+                  <div class="form-group col">Sign up with Facebook</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="form-group col">
+              <a href="#" class="btn btn-primary btn-block">
+                <div class="form-row">
+                  <div class="form-group col">
+                    <i class="fab fa-google fa-lg"></i>
+                  </div>
+                  <div class="form-group col">Sign up with Google</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
